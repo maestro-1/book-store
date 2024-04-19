@@ -1,0 +1,10 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "query.sql"
+    schema: "schema.sql"
+    gen:
+      go:
+        package: "book_sales_api"
+        out: "book_sales_api"
+        sql_package: "pgx/v5"
